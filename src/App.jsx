@@ -612,7 +612,7 @@ function HomePage({ onStart }) {
         </div>
       </header>
 
-      <main style={{maxWidth:900,margin:"0 auto",padding:"40px 24px",position:"relative",zIndex:1}}>
+      <main style={{maxWidth:1200,width:"95%",margin:"0 auto",padding:"40px 24px",position:"relative",zIndex:1}}>
         {/* Hero */}
         <div style={{textAlign:"center",marginBottom:48}}>
           <div style={{display:"inline-flex",alignItems:"center",gap:8,background:"rgba(99,102,241,0.1)",border:"1px solid rgba(99,102,241,0.25)",borderRadius:999,padding:"5px 16px",marginBottom:20}}>
@@ -627,7 +627,7 @@ function HomePage({ onStart }) {
         </div>
 
         {/* Mode Selector */}
-        <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:14,marginBottom:24}}>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit, minmax(200px, 1fr))",gap:14,marginBottom:24}}>
           {[
             { m:"single", icon:"📄", label:"Single Paper", desc:"One paper at a time" },
             { m:"custom", icon:"🔀", label:"Combination", desc:"Mix multiple papers" },
@@ -817,7 +817,7 @@ function TestPage({ selectedIds, onFinish }) {
 
       {/* Main */}
       <div style={{flex:1,display:"flex",justifyContent:"center",padding:"28px 20px",position:"relative",zIndex:1}}>
-        <div style={{width:"100%",maxWidth:700}}>
+        <div style={{width:"100%",maxWidth:1000}}>
           {/* Labels */}
           <div style={{display:"flex",gap:8,marginBottom:16,flexWrap:"wrap"}}>
             <span style={{background:"rgba(99,102,241,0.15)",border:"1px solid rgba(99,102,241,0.3)",color:"#a5b4fc",fontSize:12,padding:"3px 12px",borderRadius:99,fontWeight:600}}>{q.paperSubject}</span>
@@ -929,7 +929,7 @@ function ResultPage({ result, onRetry, onHome }) {
   return (
     <div style={{minHeight:"100vh",background:"linear-gradient(135deg,#0a0e1a 0%,#141929 50%,#0a0e1a 100%)",fontFamily:"'Sora',sans-serif",padding:"40px 20px"}}>
       <style>{`@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');*{box-sizing:border-box;margin:0;padding:0}::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:99px}`}</style>
-      <div style={{maxWidth:720,margin:"0 auto"}}>
+      <div style={{maxWidth:1000,width:"95%",margin:"0 auto"}}>
 
         {/* Result hero */}
         <div style={{background:"rgba(255,255,255,0.03)",border:"1px solid rgba(255,255,255,0.08)",borderRadius:24,padding:"40px 32px",textAlign:"center",marginBottom:20}}>
@@ -940,7 +940,7 @@ function ResultPage({ result, onRetry, onHome }) {
             <span style={{color:grade.color,fontSize:30,fontWeight:800}}>{accuracy}%</span>
             <span style={{color:"rgba(255,255,255,0.3)",fontSize:11}}>Accuracy</span>
           </div>
-          <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:12}}>
+          <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit, minmax(180px, 1fr))",gap:12}}>
             {[{label:"Correct",value:correct,color:"#4ade80",bg:"rgba(34,197,94,0.1)",border:"rgba(34,197,94,0.3)"},
               {label:"Wrong",value:wrong,color:"#f87171",bg:"rgba(239,68,68,0.1)",border:"rgba(239,68,68,0.3)"},
               {label:"Skipped",value:unanswered,color:"#fbbf24",bg:"rgba(251,191,36,0.1)",border:"rgba(251,191,36,0.3)"}
