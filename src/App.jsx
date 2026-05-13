@@ -612,7 +612,7 @@ function HomePage({ onStart }) {
         </div>
       </header>
 
-      <main style={{maxWidth:1200,width:"95%",margin:"0 auto",padding:"40px 24px",position:"relative",zIndex:1}}>
+      <main style={{width:"100%",padding:"40px 40px",position:"relative",zIndex:1}}>
         {/* Hero */}
         <div style={{textAlign:"center",marginBottom:48}}>
           <div style={{display:"inline-flex",alignItems:"center",gap:8,background:"rgba(99,102,241,0.1)",border:"1px solid rgba(99,102,241,0.25)",borderRadius:999,padding:"5px 16px",marginBottom:20}}>
@@ -816,8 +816,7 @@ function TestPage({ selectedIds, onFinish }) {
       )}
 
       {/* Main */}
-      <div style={{flex:1,display:"flex",justifyContent:"center",padding:"28px 20px",position:"relative",zIndex:1}}>
-        <div style={{width:"100%",maxWidth:1000}}>
+        <div style={{width:"100%"}}>
           {/* Labels */}
           <div style={{display:"flex",gap:8,marginBottom:16,flexWrap:"wrap"}}>
             <span style={{background:"rgba(99,102,241,0.15)",border:"1px solid rgba(99,102,241,0.3)",color:"#a5b4fc",fontSize:12,padding:"3px 12px",borderRadius:99,fontWeight:600}}>{q.paperSubject}</span>
@@ -929,7 +928,7 @@ function ResultPage({ result, onRetry, onHome }) {
   return (
     <div style={{minHeight:"100vh",background:"linear-gradient(135deg,#0a0e1a 0%,#141929 50%,#0a0e1a 100%)",fontFamily:"'Sora',sans-serif",padding:"40px 20px"}}>
       <style>{`@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');*{box-sizing:border-box;margin:0;padding:0}::-webkit-scrollbar{width:4px}::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:99px}`}</style>
-      <div style={{maxWidth:1000,width:"95%",margin:"0 auto"}}>
+      <div style={{width:"100%",padding:"0 40px"}}>
 
         {/* Result hero */}
         <div style={{background:"rgba(255,255,255,0.03)",border:"1px solid rgba(255,255,255,0.08)",borderRadius:24,padding:"40px 32px",textAlign:"center",marginBottom:20}}>
